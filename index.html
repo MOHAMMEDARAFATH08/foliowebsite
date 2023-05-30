@@ -169,10 +169,12 @@
    <section class="contact section" id="contact">
      <h2 class="section-title">Contact</h2>
      <div class="contact__container bg-grid">
-      <form  class="contact__form">
-         <input type="text" placeholder="Name" class="contact__input" id="name" required>
-         <input type="mail" placeholder="Email" class="contact__input" id="mail" required>
-         <textarea name="" id="mesgContent" cols="0" rows="10" class="contact__input"></textarea>
+      <form  action ="https://formsubmit.co/mdarafath210@gmail.com" method="POST" class="contact__form">
+         <input type="text" placeholder="Name" class="contact__input" name="name"  required>
+         <input type="mail" placeholder="Email" class="contact__input" name="email"  required>
+         <input type="text" placeholder="Subject" class="contact__input" name="subject"  required>
+         <textarea name="message" placeholder="Type your Message" cols="0" rows="10" class="contact__input" required></textarea>
+         <input type="hidden" name="_template" value="table">
          <button type="submit" class="contact__button button">Submit</button>
       </form>
      </div>
